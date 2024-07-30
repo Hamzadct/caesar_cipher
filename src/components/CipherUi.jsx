@@ -16,30 +16,30 @@ const CipherUi = () => {
   return (
     <div className="px-10 py-3 ">
         <div className=" mt-5">
-          <div class="w-full max-w-md p-5 bg-white rounded-lg font-inter">
+          <div className="w-full max-w-md p-5 bg-white rounded-lg font-inter">
             <h2 className="text-4xl font-extrabold text-blue-600 text-center mb-3">
             EncodeX
             </h2>
             <label
-              class="block text-gray-700 text-sm font-semibold mb-1"
-              for="unique-input"
+              className="block text-gray-700 text-sm font-semibold mb-1"
+              htmlFor="unique-input"
             >
               Message:
             </label>
             <textarea
-              class="text-sm custom-input w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm transform  focus:outline-blue-300  hover:border-blue-300 bg-gray-100"
+              className="text-sm custom-input w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm transform  focus:outline-blue-300  hover:border-blue-300 bg-gray-100"
               placeholder="Enter text to encode or decode"
               value={text}
               onChange={(e) => setText(e.target.value)}
             />
             <label
-              class="block text-gray-700 text-sm font-semibold mt-3 mb-1"
-              for="unique-input"
+              className="block text-gray-700 text-sm font-semibold mt-3 mb-1"
+             htmlFor="unique-input"
             >
               Shift:
             </label>
             <input
-              class="text-sm custom-input w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-blue-300  hover:border-blue-300 bg-gray-100"
+              className="text-sm custom-input w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-blue-300  hover:border-blue-300 bg-gray-100"
               placeholder="Enter Shift here"
               type="number"
               value={shift}
@@ -47,13 +47,13 @@ const CipherUi = () => {
             />
 
             <label
-              class="block text-gray-700 text-sm font-semibold mt-3 mb-1"
-              for="unique-input"
+              className="block text-gray-700 text-sm font-semibold mt-3 mb-1"
+              htmlFor="unique-input"
             >
               Mode:
             </label>
             <select
-              class="text-sm custom-input w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm  focus:outline-blue-300 hover:border-blue-300 bg-gray-100"
+              className="text-sm custom-input w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm  focus:outline-blue-300 hover:border-blue-300 bg-gray-100"
               placeholder="Select Operation"
               value={mode}
               onChange={(e) => setMode(e.target.value)}
